@@ -7,17 +7,23 @@ $(document).ready(function() {
     var favoriteArray = [colorInput, flavorInput, seasonInput, personInput];
     var reverseArray = favoriteArray.reverse();
     var numberArray = [reverseArray[1], reverseArray[0], reverseArray[2]];
+    var pushArray = reverseArray.concat(numberArray);
 
 
 
 
-    console.log(reverseArray);
+    console.log(reverseArray[0]);
 
     $(".color").text(colorInput);
     $(".flavor").text(flavorInput);
     $(".season").text(seasonInput);
     $(".person").text(personInput);
-    $(".array").text(numberArray);
+    $(".array").text(pushArray);
+    $(".array1").text(pushArray[0]);
+    $(".array2").text(pushArray[1]);
+    $(".array3").text(pushArray[2]);
+    $(".array4").text(pushArray[3]);
+
 
 
 
