@@ -6,6 +6,10 @@ $(document).ready(function() {
     var personInput = $("input#person").val();
     var favoriteArray = [colorInput, flavorInput, seasonInput, personInput];
     var reverseArray = favoriteArray.reverse();
+    var numberArray = [reverseArray[1], reverseArray[0], reverseArray[2]];
+
+
+
 
     console.log(reverseArray);
 
@@ -13,6 +17,9 @@ $(document).ready(function() {
     $(".flavor").text(flavorInput);
     $(".season").text(seasonInput);
     $(".person").text(personInput);
+    $(".array").text(numberArray);
+
+
 
 
 
